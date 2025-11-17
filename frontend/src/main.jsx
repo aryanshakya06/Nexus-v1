@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { AppProvider } from './context/AppContext.jsx'
 
-export const server = "http://localhost:5000"
+export const server = "https://nexus-v1-r12b.onrender.com"
 
 createRoot(document.getElementById('root')).render(
   // <StrictMode>

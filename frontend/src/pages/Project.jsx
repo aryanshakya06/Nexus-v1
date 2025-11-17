@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import UserLayout from '../layout/userLayout';
 import { AppData } from '../context/AppContext';
+import { server } from '../main.jsx';
 
 const Project = () => {
   const [projects, setProjects] = useState([]);
@@ -21,7 +22,7 @@ const Project = () => {
       setLoading(true);
       setError(null);
       
-      const response = await fetch('http://localhost:5000/api/v1/project', {
+      const response = await fetch(`${server}/api/v1/project`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -57,7 +58,7 @@ const Project = () => {
 
   const fetchUserData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/v1/me', {
+      const response = await fetch(`${server}/api/v1/me`, {
         method: 'GET',
         credentials: 'include',
         cache: 'no-store',
@@ -90,7 +91,7 @@ const Project = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/v1/project/${projectId}`, {
+      const response = await fetch(`${server}/api/v1/project/${projectId}`, {
         method: 'DELETE',
         credentials: 'include',
       });
