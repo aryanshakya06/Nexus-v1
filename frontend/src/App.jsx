@@ -11,10 +11,9 @@ import Verify from './pages/Verify.jsx';
 import AdminDashboard from './pages/AdminDashboard.jsx';
 import VerifiedHome from './pages/VerifiedHome.jsx';
 import Contact from './pages/Contact.jsx';
-import UserLayout from './layout/userLayout/index.jsx';
 import Project from './pages/Project.jsx';
 import Profile from './pages/Profile.jsx';
-import CreateProject from './pages/createProject.jsx';
+import CreateProject from './pages/CreateProject.jsx';
 import ProjectId from './pages/ProjectId.jsx';
 import Analytics from './pages/Analytics.jsx';
 
