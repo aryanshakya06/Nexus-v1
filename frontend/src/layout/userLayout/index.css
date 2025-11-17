@@ -1,0 +1,57 @@
+.header {
+    position:fixed;
+    width: 100%;
+    background: rgb(59, 224, 141);
+    height: 3rem;;
+    padding: 1.5rem;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.566);
+    margin-bottom: 1rem;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    color: black;
+    z-index: 500;
+}
+
+main {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+#user-layout {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+nav {
+    width: 350px;   
+    font-weight: 500;
+    display: flex;
+    gap: 1.5rem;
+}
+
+a, label {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+a:hover, label:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background: #e4e4e468;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    bottom:-4.8rem;
+    width: 100%;
+    display:none;
+}   

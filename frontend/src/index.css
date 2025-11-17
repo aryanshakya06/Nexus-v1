@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: blue;
+}
+
+/* form styles */
+
+.form-container {
+    margin-top:40px;
+    background-color: #ffffff;
+    padding: 32px 48px;
+    border-radius: 1rem;
+    width: 321px;
+    box-shadow: 2px 2px 10px 2px rgb(59, 224, 141);
+}
+
+.form-container h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.form-container input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 5px;
+    border: 0.5px solid rgba(128, 128, 128, 0.504);   
+    border-radius: 5px;
+    outline: none;  
+}
+
+.form-container button {
+
+    background: rgb(59, 224, 141);
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    padding: 0.5rem;   
+    cursor: pointer; 
+    margin: 10px 0;
+}
+
+.form-container button:hover{
+    transition: 0.3s;
+    background-color: rgb(55, 206, 131);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.form-container button:active {
+    cursor: not-allowed;
+}
+
+.form-container p {
+  text-align: center;
+}
+
+/* Base Toast Styling */
+.Toastify__toast {
+  border-radius: 10px !important;
+  padding: 14px 18px !important;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 15px !important;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.1) !important;
+}
+
+/* Success Toast */
+.Toastify__toast--success {
+  background: #d4f8d4 !important;  /* light green */
+  color: #0f7a0f !important;       /* dark green text */
+  border-left: 6px solid #20c020 !important;
+}
+
+/* Error Toast */
+.Toastify__toast--error {
+  background: #ffe0e0 !important;  /* light red */
+  color: #b30000 !important;       /* dark red text */
+  border-left: 6px solid #ff4d4d !important;
+}
+
+/* Toast body text */
+.Toastify__toast-body {
+  color: inherit !important; /* use toast color */
+}
+
+/* Close Button */
+.Toastify__close-button {
+  color: inherit !important;
+  opacity: 0.6 !important;
+}
+.Toastify__close-button:hover {
+  opacity: 1 !important;
+}
+
+/* Progress bar for both */
+.Toastify__progress-bar {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.Toastify__close-button {
+  color: inherit !important; /* match green/red text */
+  background: transparent !important;
+  border: none !important;
+  opacity: 0.7 !important;
+  font-size: 18px !important;
+  line-height: 1 !important;
+  padding: 1rem !important;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+/* Hover: rotate slightly + scale + bump up */
+.Toastify__close-button:hover {
+  opacity: 1 !important;
+  transform: translateY(-2px) scale(1.1);
+}

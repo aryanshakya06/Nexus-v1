@@ -1,0 +1,54 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    
+}
+
+.home > h2 {
+    text-align: center;
+}
+
+.home section {
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: auto;
+    width: 90%;
+    line-height: 200%;
+    font-weight: 550;
+    padding: 4rem;
+    text-align: justify;
+    border-radius: 3rem;
+}
+
+.home section p {
+    width: 100%;
+    font-size: 1.1rem;      
+}
+
+.home section span {
+    width: 100%;
+    font-size: 1.1rem;  
+    text-align: center;    
+}
+
+.home section img {
+    height: 100%;
+    width: 40%;
+}
+
+.home > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.home section a {
+    color: blue;
+    text-decoration: underline;
+}
+
+
